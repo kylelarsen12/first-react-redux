@@ -5,7 +5,7 @@ import { decrement, increment, customAmount } from "./features/counterSlice";
 
 function Counter() {
   //Call useSelector to obtain state value from store and reassign
-  const count = useSelector((state) => state.value);
+  const count = useSelector((state) => state.counter.value);
   //include useDispatch hook
   const dispatch = useDispatch();
 

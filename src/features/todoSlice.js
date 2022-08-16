@@ -17,6 +17,7 @@ export const todoSlice = createSlice({
     },
     //use spread to get all array items, determine which index of array to remove, use splice to remove that specific element
     removeTodo: (state, action) => {
+      console.log(action);
       let todoList = [...state.items];
       let itemIndex = action.payload;
       if (itemIndex !== -1) {
