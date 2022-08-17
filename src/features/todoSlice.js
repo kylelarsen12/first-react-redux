@@ -20,10 +20,8 @@ export const todoSlice = createSlice({
       console.log(action);
       let todoList = [...state.items];
       let itemIndex = action.payload;
-      if (itemIndex !== -1) {
-        todoList.splice((itemIndex, 1));
-        return { items: todoList };
-      }
+      todoList.splice(itemIndex, 1);
+      return { items: todoList };
     },
     //return an empty array
     clearTodos: () => {

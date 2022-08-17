@@ -45,7 +45,7 @@ function Counter() {
             setInput(e.target.value);
           }}
         ></input>
-        <button type="submit">Submit</button>
+        <button type="submit">Add Custom Amount</button>
       </form>
     </div>
   );

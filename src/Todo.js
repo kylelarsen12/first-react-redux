@@ -32,7 +32,7 @@ function Todo() {
           type="text"
           onChange={(e) => setTodoInput(e.target.value)}
         ></input>
-        <button type="submit">Submit</button>
+        <button type="submit">Submit New Todo</button>
       </form>
       <ul>{renderTodoItems}</ul>
       <button onClick={() => dispatch(clearTodos())}>Clear All Todos</button>
